@@ -1,0 +1,25 @@
+@import "../config/variables";
+@import "../config/mixins";
+
+.ContainerMain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  height: 100vh;
+
+  @include flex(column, center, center);
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background-color: red;
+}

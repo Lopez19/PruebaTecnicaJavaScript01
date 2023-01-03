@@ -1,0 +1,17 @@
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin section {
+  section {
+    width: 100%;
+    height: 100px;
+    @include flex(column, center, center, wrap);
+
+    @content;
+  }
+}

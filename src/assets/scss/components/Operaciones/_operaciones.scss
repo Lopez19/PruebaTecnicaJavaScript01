@@ -1,0 +1,56 @@
+@import "../../config/variables";
+@import "../../config/mixins";
+
+@include section() {
+  .Operaciones__content {
+    height: 100%;
+    @include flex("", center, center, wrap);
+
+    &--input {
+      @include flex("", center, center, wrap);
+      gap: 10px;
+
+      label {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+
+      input {
+        width: 100px;
+        height: 30px;
+        border: 1px solid $rojo;
+        border-radius: 5px;
+        padding: 0 10px;
+        outline: none;
+      }
+
+      select {
+        width: 100px;
+        height: 30px;
+        border: 1px solid $rojo;
+        border-radius: 5px;
+        padding: 0 10px;
+        outline: none;
+      }
+    }
+
+    &--button {
+      width: 100px;
+      height: 30px;
+      border: 1px solid $rojo;
+      border-radius: 5px;
+      padding: 0 10px;
+      outline: none;
+      background-color: $rojo;
+      color: $blanco;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    &__result {
+      margin-left: 10px;
+      font-size: 1.5rem;
+    }
+  }
+}

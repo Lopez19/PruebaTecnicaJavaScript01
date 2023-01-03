@@ -1,0 +1,23 @@
+@import "../../config/variables";
+@import "../../config/mixins";
+
+.unificacion {
+  width: 100%;
+  margin-top: 20px;
+  @include flex(row, space-around, center);
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__original {
+    width: 300px;
+    @include flex(column, center, center);
+  }
+
+  &__unificado {
+    width: 300px;
+    @include flex(column, center, center);
+  }
+}
